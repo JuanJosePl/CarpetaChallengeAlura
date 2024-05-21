@@ -41,7 +41,9 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
-/*Sección Menu*/
+/*==========================
+=          MENU            =
+==========================*/
 
 section.menu {
   display: flex;
@@ -61,11 +63,14 @@ ul.menu__list li {
   padding: 5px;
 }
 
-/*Sección Title*/
+/*==========================
+=         TITLE            =
+==========================*/
 
 section.title {
   display: flex;
 }
+
 div.title__div {
   display: flex;
   justify-content: space-between;
@@ -75,6 +80,7 @@ div.title__div {
   margin: 30px;
   gap: 15px;
 }
+
 h2.title__bio {
   font-size: 50px;
 }
@@ -91,7 +97,9 @@ li.title__network__item a {
   margin: 10px;
 }
 
-/*Sección About*/
+/*==========================
+=         ABOUT            =
+==========================*/
 
 section.about {
   margin-top: 30px;
@@ -108,7 +116,9 @@ p.about__paragraph {
   text-align: justify;
 }
 
-/*Sección skill*/
+/*==========================
+=         SKILLS           =
+==========================*/
 
 section.skills {
   margin-top: 30px;
@@ -128,6 +138,7 @@ div.skills__line {
   align-items: center;
   flex-direction: row-reverse;
 }
+
 div.skills__box {
   width: 180px;
   height: 180px;
@@ -142,7 +153,9 @@ ul.skills__ul {
   margin-block-start: 115px;
 }
 
-/*Sección Hobbies*/
+/*==========================
+=         HOBBIES          =
+==========================*/
 
 section.hobbies {
   margin-top: 14%;
@@ -162,6 +175,7 @@ div.hobbies__line {
   align-items: center;
   flex-direction: row-reverse;
 }
+
 div.hobbies__box {
   width: 180px;
   height: 180px;
@@ -176,7 +190,9 @@ ul.hobbies__ul {
   margin-block-start: 115px;
 }
 
-/* Experiencia Académica*/
+/*==========================
+=   EXPERIENCIA ACADÉMICA  =
+==========================*/
 
 section.academic {
   background: #eaf2fd;
@@ -211,15 +227,20 @@ li.academic__courses__item__img {
   background-color: #ffffff;
 }
 
-/* experiencia*/
+/* Experiencia */
 
 section.experience {
   margin-top: 14%;
   padding: 10px 7%;
 }
 
-div.experiencie__box {
-  padding: 0 0 5% 100px;
+div.experience__box,
+div.experiencie__box { /* assuming 'experiencie' is a typo and should be 'experience' */
+  padding-bottom: 5%;
+}
+
+div.experiencie__box { /* Maintain specific padding */
+  padding-left: 100px;
 }
 
 h2.experience__section__title {
@@ -235,26 +256,16 @@ div.experience__section__title {
 
 div.experience__info {
   display: flex;
-  float: right;
   flex-direction: column;
+  float: right;
   padding: 180px 480px 30px 0;
 }
 
-h2.experience__title {
-}
-
-h3.experience__text {
-}
-
-div.experience__box {
-  padding-bottom: 5%;
-}
 div.experience__info__ {
   display: flex;
-  float: left;
   flex-direction: column;
-  padding: 180px 30px 0px 100px;
-  padding-left: 10%;
+  float: left;
+  padding: 180px 30px 0 10%;
 }
 
 .experience__title,
@@ -263,14 +274,13 @@ div.experience__info__ {
   margin-bottom: 15px;
 }
 
-.experiencia__botao--repo{
-
+.experiencia__botao--repo {
   padding: 10px 20px;
   border: 1px solid #007bff;
   color: #007bff;
   cursor: pointer;
-
 }
+
 .experience__botao--demo {
   padding: 10px 20px;
   background-color: #007bff;
@@ -279,7 +289,11 @@ div.experience__info__ {
   cursor: pointer;
 }
 
-/*Contacto*/
+
+/*==========================
+=        CONTACTO          =
+==========================*/
+
 section.formcontato {
   display: flex;
   justify-content: space-between;
@@ -287,33 +301,27 @@ section.formcontato {
   background: #eaf2fd;
 }
 
-/* Contenedor de imagen de contacto */
 .formcontato__contacto {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
-/* Imagen de contacto */
 .formcontato__img {
   margin-bottom: 20px;
 }
 
-/* Contenedor de formulario */
 .formcontato__text {
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin: 0 0 0 50px;
+  margin-left: 50px;
 }
 
-/* Título y subtítulo del formulario */
 .formcontato__title,
 .formcontato__subtext {
   text-align: start;
 }
 
-/* Campos de entrada del formulario */
 .formcontato__input,
 .formcontato__textarea {
   width: 100%;
@@ -322,7 +330,6 @@ section.formcontato {
   border: 1px solid #ffffff;
 }
 
-/* Botón del formulario */
 .formcontato__botao {
   padding: 10px 20px;
   background-color: #007bff;
@@ -331,13 +338,15 @@ section.formcontato {
   cursor: pointer;
 }
 
-/*footeer*/
+/*==========================
+=         FOOTER           =
+==========================*/
 
 section.footer {
   display: flex;
-  padding: 10px 7%;
   flex-direction: column;
   justify-content: center;
+  padding: 10px 7%;
 }
 
 p.footer__section__p {
@@ -345,13 +354,18 @@ p.footer__section__p {
   justify-content: center;
 }
 
+
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
 @media (min-width: 768px) {
   /* Menú */
+  .menu__list__item {
+    display: none ; 
+  }
 
+  
   /*title*/
 
   /*Skills*/
@@ -362,6 +376,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
   /*Experiencia Profesional*/
 }
+
 
 /*Mobile*/
 @media (min-width: 425px) {
