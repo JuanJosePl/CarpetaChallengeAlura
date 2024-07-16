@@ -44,12 +44,9 @@ https://en.bem.info/methodology/quick-start/*/
 /*==========================
 =          MENU            =
 ==========================*/
-<<<<<<< HEAD
 nav{
   display: flex;
 }
-=======
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 
 section.menu {
   display: flex;
@@ -88,7 +85,6 @@ div.title__div {
 }
 
 h2.title__bio {
-<<<<<<< HEAD
   font-size: 3.2rem !important;
   text-align: justify;
 }
@@ -97,9 +93,6 @@ h3.title__subsection {
   font-weight: normal;
   font-size: 2rem;
   text-align: justify;
-=======
-  font-size: 50px;
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 }
 
 ul.title__network {
@@ -109,14 +102,11 @@ ul.title__network {
   margin-block-end: 0;
 }
 
-<<<<<<< HEAD
 img.title__profile {
   height: 40vh;
   width: 40vh;
 }
 
-=======
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 li.title__network__item a {
   justify-content: space-between;
   margin: 10px;
@@ -128,11 +118,7 @@ li.title__network__item a {
 
 section.about {
   margin-top: 30px;
-<<<<<<< HEAD
   padding: 10px 40% 0 8%;
-=======
-  padding: 10px 50% 0 8%;
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
   background: #eaf2fd;
 }
 
@@ -224,11 +210,7 @@ ul.hobbies__ul {
 ==========================*/
 
 section.academic {
-<<<<<<< HEAD
   background: #eaf2fd ;
-=======
-  background: #eaf2fd;
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
   margin-top: 14%;
   padding: 10px 7%;
 }
@@ -264,7 +246,6 @@ li.academic__courses__item__img {
 
 section.experience {
   margin-top: 14%;
-<<<<<<< HEAD
   padding: none;
 }
 
@@ -275,17 +256,6 @@ div.experiencie__box {
 
 div.experiencie__box {
   /* Maintain specific padding */
-=======
-  padding: 10px 7%;
-}
-
-div.experience__box,
-div.experiencie__box { /* assuming 'experiencie' is a typo and should be 'experience' */
-  padding-bottom: 5%;
-}
-
-div.experiencie__box { /* Maintain specific padding */
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
   padding-left: 100px;
 }
 
@@ -304,23 +274,14 @@ div.experience__info {
   display: flex;
   flex-direction: column;
   float: right;
-<<<<<<< HEAD
   padding: 180px 472px 30px 0;
-=======
-  padding: 180px 480px 30px 0;
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 }
 
 div.experience__info__ {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   float: left;  
   padding: 180px 80px 0 30%;
-=======
-  float: left;
-  padding: 180px 30px 0 10%;
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 }
 
 .experience__title,
@@ -344,10 +305,6 @@ div.experience__info__ {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 /*==========================
 =        CONTACTO          =
 ==========================*/
@@ -364,12 +321,8 @@ section.formcontato {
   align-items: center;
 }
 
-<<<<<<< HEAD
 img.formcontato__img {
   display: block;
-=======
-.formcontato__img {
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
   margin-bottom: 20px;
 }
 
@@ -417,15 +370,10 @@ p.footer__section__p {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
-<<<<<<< HEAD
 @media (max-width: 768px) {
   /* Menú */
 
@@ -660,29 +608,6 @@ div.footer__rodape {
 
 /*Mobile*/
 @media (max-width: 500px) {
-=======
-@media (min-width: 768px) {
-  /* Menú */
-  .menu__list__item {
-    display: none ; 
-  }
-
-  
-  /*title*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formación Académica*/
-
-  /*Experiencia Profesional*/
-}
-
-
-/*Mobile*/
-@media (min-width: 425px) {
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
   /*Menu*/
 
   /*Titulo*/
@@ -695,7 +620,6 @@ div.footer__rodape {
 
   /*Formación Académica*/
 
-<<<<<<< HEAD
   div.academic__courses {
     flex-direction: column;
   }
@@ -727,11 +651,4 @@ div.footer__rodape {
   /*Footer*/
   
 
-=======
-  /*Experiencia Profesional*/
-
-  /*Contacto*/
-
-  /*Footer*/
->>>>>>> 1193d4f63cb7b069488b16be0d2155a4badf4d80
 }

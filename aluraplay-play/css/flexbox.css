@@ -55,7 +55,7 @@
 }
 
 /*Seccion  Videos */
-
+ 
 .videos__item{
     height: 303px;
     width: 280px;
@@ -66,8 +66,6 @@
     display:flex;
     flex-wrap: wrap;
     gap: 10px;
-    
-
 }
 
 
@@ -109,86 +107,78 @@
 
 
 
-@media (min-width:834px) {
+/* Media query para pantallas con un ancho mínimo de 834px */
+@media (min-width: 834px) {
 
-    /* Cabecera */
-    .cabecera__buscar__item{
-        display: block
+    /* Cabecera: Muestra el elemento .cabecera__buscar__item */
+    .cabecera__buscar__item {
+        display: block; /* Hace que el elemento sea un bloque, ocupando todo el ancho disponible */
     }
+
     /* Desafío Menú Lateral */
     .menu__container {
-        left: 0;
-        height: auto;
-        width: 74px;
-        top: 80px;
+        left: 0; /* Pone el contenedor del menú en la posición izquierda */
+        height: auto; /* Ajusta la altura del contenedor automáticamente */
+        width: 74px; /* Establece el ancho del contenedor del menú a 74px */
+        top: 80px; /* Pone el contenedor del menú 80px desde la parte superior */
     }
     
     .menu__lista {
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 15px;
-        gap: 33px;
+        flex-direction: column; /* Ordena los elementos de la lista del menú en una columna */
+        justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
+        padding-top: 15px; /* Añade un padding de 15px en la parte superior */
+        gap: 33px; /* Establece un espacio de 33px entre los elementos hijos */
     }
-
 
     /* Rodapie */
-    .rodapie__container{
-        justify-content: space-between;
+    .rodapie__container {
+        justify-content: space-between; /* Distribuye los elementos del contenedor con el máximo espacio posible entre ellos */
     }
-   
-
 }
 
+/* Media query para pantallas con un ancho mínimo de 1440px */
+@media (min-width: 1440px) {
 
-
-@media (min-width:1440px ){
-
-    .menu__container{
-        width: 239px;
-        overflow: scroll;
-
+    .menu__container {
+        width: 239px; /* Establece el ancho del contenedor del menú a 239px */
+        overflow: scroll; /* Añade scroll si el contenido desborda */
     }
 
+    /* Muestra el segundo, tercer y cuarto hijo de .menu__lista */
     .menu__lista:nth-child(2),
     .menu__lista:nth-child(3),
-    .menu__lista:nth-child(4){
-        display: flex;
+    .menu__lista:nth-child(4) {
+        display: flex; /* Hace que los elementos sean flexibles, alineados en fila por defecto */
     }
 
-    .menu__lista{
-        height: auto;
-        padding: 20px 17px 20px 15px;
-        gap: 15px;
-       
+    .menu__lista {
+        height: auto; /* Ajusta la altura del contenedor automáticamente */
+        padding: 20px 17px 20px 15px; /* Añade padding: 20px arriba y abajo, 17px a la derecha, 15px a la izquierda */
+        gap: 15px; /* Establece un espacio de 15px entre los elementos hijos */
     }
 
-    .menu__lista:nth-child(3){
-        flex-direction: column-reverse;
-
-    }
-    .menu__itens{
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse; /* Ordena los elementos del tercer hijo en una columna invertida */
     }
 
-    .videojuegos{
-        order: 3;
+    .menu__itens {
+        flex-direction: row; /* Ordena los elementos en una fila */
+        gap: 15px; /* Establece un espacio de 15px entre los elementos hijos */
+        align-items: center; /* Alinea los elementos al centro del contenedor a lo largo del eje transversal */
     }
 
-    .peliculas{
-        order:2;
+    /* Orden de los elementos en el flex container */
+    .videojuegos {
+        order: 3; /* Coloca el elemento con clase .videojuegos en el tercer lugar */
     }
 
-    .premium{
-        order:1;
+    .peliculas {
+        order: 2; /* Coloca el elemento con clase .peliculas en el segundo lugar */
     }
 
-    
-   
-
-
-
-
+    .premium {
+        order: 1; /* Coloca el elemento con clase .premium en el primer lugar */
+    }
 }
+
 
