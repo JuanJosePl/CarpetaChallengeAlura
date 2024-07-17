@@ -1,9 +1,11 @@
+import esMayorDeEdad from "./validar-edad.js";
 import esUnCuil from "./validarCuil.js";
 
 const camposDeFormulario = document.querySelectorAll("[required]");
 
 camposDeFormulario.forEach((campo) => {
     campo.addEventListener("blur", () => verificarCampo(campo));
+    campo.addEventListener("invalid", evento => evento.preventDefault())
 });
 
 function verificarCampo(campo) {
@@ -15,5 +17,8 @@ function verificarCampo(campo) {
             campo.setCustomValidity("");
         }
         campo.reportValidity();
+    }
+    if(campo.name == "fecha_nacimiento" && campo.value != ""){
+        esMayorDeEdad(campo);
     }
 }
